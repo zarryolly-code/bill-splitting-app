@@ -1,0 +1,32 @@
+{% load static %}
+{% load humanize %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+
+    <link rel="stylesheet" href="{% static 'bills/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h1>➕ Add Expense</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Save Expense</button>
+    </form>
+
+    <br>
+
+    <a href="/">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>
