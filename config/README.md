@@ -73,7 +73,7 @@ config/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/zarryolly-code/bill-splitting-app.git
 ```
 
 ### Navigate into the project
@@ -86,6 +86,16 @@ cd config
 
 ```bash
 pip install django
+```
+
+```bash
+cd bill-splitting-app/config
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
 ### Run migrations
